@@ -3,6 +3,7 @@ import React from "react";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
+import Aleatorio from "./components/basicos/Aleatorio"
 
 export default () => (
   <div id="app">
@@ -11,5 +12,6 @@ export default () => (
     <ComParametro titulo="Situação do Aluno" aluno="Pedro Silva" nota={9.3} />
     <ComParametro titulo="Situação do Aluno" aluno="Maria Santos" nota={9.9} />
     <Fragmento />
+    <Aleatorio min={5} max={10} />
   </div>
 );
