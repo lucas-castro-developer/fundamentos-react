@@ -8,7 +8,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 
 export default () => (
-  <div id="App">
+  <div className="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
       <Card titulo="#01 - Primeiro exercício">
