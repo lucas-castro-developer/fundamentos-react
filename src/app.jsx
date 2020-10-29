@@ -1,6 +1,7 @@
-import "./App.css"
+import "./App.css";
 import React from "react";
 
+import Familia from "./components/basicos/Familia";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
@@ -31,6 +32,9 @@ export default () => (
       </Card>
       <Card titulo="#04 - Desafio Aleatório" color="#851e3e">
         <Aleatorio min={5} max={10} />
+      </Card>
+      <Card titulo="#05 - Componente com Filho" color="#00C8F8">
+        <Familia sobrenome="Santos" />
       </Card>
     </div>
   </div>
