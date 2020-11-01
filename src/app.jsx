@@ -9,6 +9,7 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
+import ListaProdutos from "./components/repeticao/ListaProdutos";
 
 export default () => (
   <div className="App">
@@ -45,6 +46,9 @@ export default () => (
       </Card>
       <Card titulo="#06 - Repetição" color="#FF4C65">
         <ListaAlunos></ListaAlunos>
+      </Card>
+      <Card titulo="#07 - Desafio Repetição" color="#FF4C65">
+        <ListaProdutos></ListaProdutos>
       </Card>
     </div>
   </div>
