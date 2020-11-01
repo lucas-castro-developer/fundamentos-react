@@ -1,28 +1,30 @@
+import "./ListaProdutos.css";
 import React from "react";
 import produtos from "../data/produtos";
 
 export default (props) => {
-  const tableStyle = {
-    borderCollapse: "collapse",
-    border: "1px solid #1A1A1A",
-  };
-  const produtosItemLista = produtos.map((produto) => {
-    return (
-      <tr style={tableStyle}>
-        <td style={tableStyle}>{produto.idProduto}</td>
-        <td style={tableStyle}>{produto.nomeProduto}</td>
-        <td style={tableStyle}>{produto.precoProduto}</td>
-      </tr>
-    );
-  });
+  function getLinhas() {
+    return produtos.map((produto, i) => {
+      return (
+        <tr key={produto.id} className={i % 2 === 0 ? "Par" : "Impar"}>
+          <td>{produto.id}</td>
+          <td>{produto.nome}</td>
+          <td>R$ {produto.preco.toFixed(2).replace(".", ",")}</td>
+        </tr>
+      );
+    });
+  }
+
   return (
-    <table style={tableStyle}>
-      <tr style={tableStyle}>
-        <th style={tableStyle}>Id do produto</th>
-        <th style={tableStyle}>Nome do produto</th>
-        <th style={tableStyle}>Preço do produto</th>
-      </tr>
-      {produtosItemLista}
+    <table className="tabelaProdutos">
+      <thead>
+        <tr>
+          <th>Id do produto</th>
+          <th>Nome do produto</th>
+          <th>Preço do produto</th>
+        </tr>
+      </thead>
+      <tbody>{getLinhas()}</tbody>
     </table>
   );
 };

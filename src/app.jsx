@@ -47,7 +47,7 @@ export default () => (
       <Card titulo="#06 - Repetição" color="#FF4C65">
         <ListaAlunos></ListaAlunos>
       </Card>
-      <Card titulo="#07 - Desafio Repetição" color="#FF4C65">
+      <Card titulo="#07 - Desafio Repetição" color="#734046">
         <ListaProdutos></ListaProdutos>
       </Card>
     </div>
