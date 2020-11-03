@@ -10,6 +10,7 @@ import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 export default () => (
   <div className="App">
@@ -49,6 +50,9 @@ export default () => (
       </Card>
       <Card titulo="#07 - Desafio Repetição" color="#734046">
         <ListaProdutos></ListaProdutos>
+      </Card>
+      <Card titulo="#08 - Par ou Ímpar" color="#f39233">
+        <ParOuImpar numero={21}></ParOuImpar>
       </Card>
     </div>
   </div>
