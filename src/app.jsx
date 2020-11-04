@@ -11,6 +11,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo"
 
 export default () => (
   <div className="App">
@@ -51,8 +52,9 @@ export default () => (
       <Card titulo="#07 - Desafio Repetição" color="#734046">
         <ListaProdutos></ListaProdutos>
       </Card>
-      <Card titulo="#08 - Par ou Ímpar" color="#f39233">
+      <Card titulo="#08 - Rendereização condicional" color="#f39233">
         <ParOuImpar numero={21}></ParOuImpar>
+        <UsuarioInfo usuario={{nome: "Lucas Castro"}}></UsuarioInfo>
       </Card>
     </div>
   </div>
