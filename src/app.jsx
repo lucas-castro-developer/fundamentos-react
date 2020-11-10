@@ -11,8 +11,9 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
-import UsuarioInfo from "./components/condicional/UsuarioInfo"
-import DiretaPai from './components/comunicacao/DiretaPai'
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 export default () => (
   <div className="App">
@@ -55,10 +56,13 @@ export default () => (
       </Card>
       <Card titulo="#08 - Renderização condicional" color="#f39233">
         <ParOuImpar numero={21}></ParOuImpar>
-        <UsuarioInfo usuario={{nome: "Lucas Castro"}}></UsuarioInfo>
+        <UsuarioInfo usuario={{ nome: "Lucas Castro" }}></UsuarioInfo>
       </Card>
       <Card titulo="#09 - Comunicação Direta" color="#59323C">
         <DiretaPai></DiretaPai>
+      </Card>
+      <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+        <IndiretaPai></IndiretaPai>
       </Card>
     </div>
   </div>
