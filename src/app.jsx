@@ -16,6 +16,7 @@ import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
 import Contador from "./components/contador/Contador";
+import MegaSena from "./components/megaSena/MegaSena";
 
 export default () => (
   <div className="App">
@@ -71,6 +72,9 @@ export default () => (
       </Card>
       <Card titulo="#12 - Contador" color="#424242">
         <Contador numeroInicial={10} passoInicial={100}></Contador>
+      </Card>
+      <Card titulo="#13 - Mega-Sena" color="#B9006E">
+        <MegaSena></MegaSena>
       </Card>
     </div>
   </div>
